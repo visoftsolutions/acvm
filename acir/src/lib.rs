@@ -1,6 +1,3 @@
-#![warn(unused_crate_dependencies)]
-#![warn(unreachable_pub)]
-
 // Arbitrary Circuit Intermediate Representation
 
 pub mod circuit;

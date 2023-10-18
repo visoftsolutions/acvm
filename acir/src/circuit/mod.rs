@@ -37,6 +37,7 @@ pub struct Circuit {
     // Note: This should be a BTreeMap, but serde-reflect is creating invalid
     // c++ code at the moment when it is, due to OpcodeLocation needing a comparison
     // implementation which is never generated.
+    #[serde(skip, default)]
     pub assert_messages: Vec<(OpcodeLocation, String)>,
 }
 
